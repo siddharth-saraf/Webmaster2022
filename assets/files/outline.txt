@@ -1,0 +1,11 @@
+index.html 
+	Home Page
+	Will have a header with pictures of event
+	Will have information about the event in different section, the sections include, calendar, what to expect, reminders, giveaways
+	will have a contact form
+about.html
+	About page
+	will have more information about the event and the artist
+join.html
+	Information Page
+	will have information about where and how to join
