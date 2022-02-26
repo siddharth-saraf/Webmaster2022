@@ -1,4 +1,29 @@
 /* ---------------------- */
+/* Custom properties      */
+/* ---------------------- */
+
+:root{
+	/* Colors */
+	--c-pink: 181 84 121;
+	--c-purple: 65 67 97;
+	--c-dark: 30 32 44;
+	--c-light: 237 243 244;
+	--c-lightBlue: 141 153 174;
+
+	/* Font Sizes */
+	--fs-900: 9.375rem;
+	--fs-800: 6.25rem;
+	--fs-700: 3.5rem;
+	--fs-600: 2rem;
+	--fs-500: 1.75rem;
+	--fs-400: 1.125rem;
+	--fs-300: 1rem;
+	--fs-200: 0.875rem;
+
+	/* Font Families */
+}
+
+/* ---------------------- */
 /* Reset                  */
 /* ---------------------- */
 
@@ -23,6 +48,16 @@ picture {
 	margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+	font-weight: 400;
+}
+
 /* Remove list styles */
 ul[role='list'],
 ol[role='list'] {
@@ -39,6 +74,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: rgb(--c-dark);
+  color: rgb(--c-light);
+  /*ADD BASE FONT FAMILY AND SIZE*/
 }
 
 /* Links that don't have a class get default styles */
@@ -108,4 +146,27 @@ select {
 	white-space: nowrap;
 	border: 0;
 }
+
+/* Colors */
+.bg-dark { background-color: rgb( var(--c-dark) );}
+.bg-pink { background-color: rgba( var(--c-pink) ); }
+.bg-purple { background-color: rgb( var(--c-purple) );}
+.bg-lightBlue { background-color: rgb( var(--c-lightBlue) );}
+.bg-light { background-color: rgb( var(--c-light) );}
+
+.text-dark { color: rgb( var(--c-dark) );}
+.text-accent { color: rgb( var(--c-pink) );}
+.text-light { color: rgb( var(--c-light) );}
+
+/* Typography */
+/*Include font families*/
+
+.letter-spacing-1 { letter-spacing: 4.75px; }
+.letter-spacing-2 { letter-spacing: 2.7px; }
+.letter-spacing-3 { letter-spacing: 2.35px; }
+
+.upper { text-transform: uppercase; }
+
+/* Include font sizes
+Change line height to 1.1 for larger font sizes*/
 
