@@ -9,3 +9,6 @@ about.html
 join.html
 	Information Page
 	will have information about where and how to join
+
+Will be an virtual Travis Scott concert on Fortnite, more information is to be determined
+
