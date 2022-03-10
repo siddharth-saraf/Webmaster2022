@@ -162,5 +162,54 @@ select {
 }
 
 /* ---------------------- */
+/* Navigation             */
+/* ---------------------- */
+
+
+.underline .nav-item {
+  position: relative;
+}
+
+.underline .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgb( var(--c-lightBlue) / .25 );
+  width: 0%;
+  content: "";
+  height: 4px;
+  transition: all 0.5s;
+}
+
+.underline .active::after {
+	width: 100%;
+	background-color: rgb( var(--c-lightBlue) / .75 );
+}
+
+.underline .nav-item:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+
+	.underline .nav-item::after {
+		width: 0%!important;
+	}
+
+	#mainNav .nav-item:hover {
+		background-color: rgb( var(--c-lightBlue) / .15 );
+	}
+
+	#mainNav .nav-item {
+		border-radius: 10px;
+		padding: 5px;
+		text-align: center;
+	}
+
+}
+
+/* ---------------------- */
 /* Home Page              */
 /* ---------------------- */
