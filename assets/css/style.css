@@ -6,7 +6,7 @@
 	/* Colors */
 	--c-pink: 181 84 121;
 	--c-purple: 65 67 97;
-	--c-dark: 30 32 44;
+	--c-dark: 17 17 22;
 	--c-light: 237 243 244;
 	--c-lightBlue: 141 153 174;
 
@@ -123,38 +123,6 @@ select {
 /* Utility Classes        */
 /* ---------------------- */
 
-.flex {
-	display: flex;
-	gap: var(--gap, 1rem);	
-}
-
-.grid {
-	display: grid;
-	gap: var(--gap, 1rem);
-}
-
-.flow > *:where:(not(:first-child)){
-	margin-top: var(--flow-space, 1rem);
-}
-
-.container {
-	padding-inline: 2em;
-	margin-inline: auto;
-	max-width: 80rem;
-}
-
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap;
-	border: 0;
-}
-
 /* Colors */
 .bg-dark { background-color: rgb( var(--c-dark) );}
 .bg-pink { background-color: rgba( var(--c-pink) ); }
@@ -193,3 +161,55 @@ select {
 	line-height: 1.1;
 }
 
+/* ---------------------- */
+/* Navigation             */
+/* ---------------------- */
+
+
+.underline .nav-item {
+  position: relative;
+}
+
+.underline .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgb( var(--c-lightBlue) / .25 );
+  width: 0%;
+  content: "";
+  height: 4px;
+  transition: all 0.5s;
+}
+
+.underline .active::after {
+	width: 100%;
+	background-color: rgb( var(--c-lightBlue) / .75 );
+}
+
+.underline .nav-item:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+
+	.underline .nav-item::after {
+		width: 0%!important;
+	}
+
+	#mainNav .nav-item:hover {
+		background-color: rgb( var(--c-lightBlue) / .15 );
+	}
+
+	#mainNav .nav-item {
+		border-radius: 10px;
+		padding: 5px;
+		text-align: center;
+	}
+
+}
+
+/* ---------------------- */
+/* Home Page              */
+/* ---------------------- */
