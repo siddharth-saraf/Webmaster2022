@@ -236,13 +236,27 @@ footer .links a:focus{
 	color: rgb( var(--c-pink) );
 }
 
-footer .links > .row > * + * {
-	border-left: 2px solid rgb( var(--c-pink) / .8);
-}
-
 .linkSec{
 	margin-bottom: .5em;
+	padding-bottom: 5px;
 }
+
+@media only screen and (min-width: 992px) {
+
+	footer .links > .row > * + * {
+		border-left: 2px solid rgb( var(--c-pink) / .8);
+	}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+	.linkSec{
+		border-bottom: 2px solid rgb( var(--c-pink) / .8);
+	}
+
+}
+
 
 /* ---------------------- */
 /* Home Page              */
