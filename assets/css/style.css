@@ -161,6 +161,19 @@ select {
 	line-height: 1.1;
 }
 
+/* Components */
+
+.btn-accent {
+	background-color: rgb( var(--c-pink) / .65);
+	color: rgb( var(--c-light) / .8);
+}
+
+.btn-accent:hover {
+	background-color: rgb( var(--c-pink) / .8 );
+	color: rgb( var(--c-light) / 1 );
+	border-color: rgb( var(--c-purple) / .4 );
+}
+
 /* ---------------------- */
 /* Navigation             */
 /* ---------------------- */
@@ -175,7 +188,7 @@ select {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: rgb( var(--c-lightBlue) / .25 );
+  background-color: rgb( var(--c-pink) / .25 );
   width: 0%;
   content: "";
   height: 4px;
@@ -184,7 +197,7 @@ select {
 
 .underline .active::after {
 	width: 100%;
-	background-color: rgb( var(--c-lightBlue) / .75 );
+	background-color: rgb( var(--c-pink) / .75 );
 }
 
 .underline .nav-item:hover::after {
@@ -210,5 +223,31 @@ select {
 }
 
 /* ---------------------- */
+/* Footer                 */
+/* ---------------------- */
+
+footer .links a {
+	color: rgb( var(--c-purple) );
+	text-decoration: none;
+}
+
+footer .links a:hover,
+footer .links a:focus{
+	color: rgb( var(--c-pink) );
+}
+
+footer .links > .row > * + * {
+	border-left: 2px solid rgb( var(--c-pink) / .8);
+}
+
+.linkSec{
+	margin-bottom: .5em;
+}
+
+/* ---------------------- */
 /* Home Page              */
 /* ---------------------- */
+
+main {
+	min-height: 75vh;
+}
