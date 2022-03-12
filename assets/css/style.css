@@ -134,6 +134,11 @@ select {
 .text-accent { color: rgb( var(--c-pink) );}
 .text-light { color: rgb( var(--c-light) );}
 
+a.text-accent:hover,
+a.text-accent:focus{
+	color: rgb( var(--c-light) / .65 ) ;
+}
+
 /* Typography */
 .ff-display { font-family: var(--ff-display); }
 .ff-sans-cond { font-family: var(--ff-sans-cond); }
@@ -179,20 +184,20 @@ select {
 /* ---------------------- */
 
 .underline .nav-item {
-  position: relative;
+  	position: relative;
 }
 
 .underline .nav-item::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-color: rgb( var(--c-pink) / .25 );
-  width: 0%;
-  content: "";
-  height: 4px;
-  transition: all 0.5s;
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
+ 	 right: 0;
+  	margin: auto;
+  	background-color: rgb( var(--c-pink) / .25 );
+  	width: 0%;
+  	content: "";
+  	height: 4px;
+  	transition: all 0.5s;
 }
 
 .underline .active::after {
@@ -201,7 +206,7 @@ select {
 }
 
 .underline .nav-item:hover::after {
-  width: 100%;
+  	width: 100%;
 }
 
 @media only screen and (max-width: 992px) {
@@ -263,5 +268,16 @@ footer .links a:focus{
 /* ---------------------- */
 
 main {
-	min-height: 75vh;
+	min-height: 100vh;
+}
+
+.carousel-inner img{
+	height: 75vh;
+	max-width: 65vw;
+	object-fit: scale-down;
+	margin: auto;
+}
+
+.carousel-caption {
+	background-color: rgb( var(--c-dark) / .85 );
 }
