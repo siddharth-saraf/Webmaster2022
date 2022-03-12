@@ -179,6 +179,33 @@ a.text-accent:focus{
 	border-color: rgb( var(--c-purple) / .4 );
 }
 
+.accDisplay {
+	font-family: var(--ff-display);
+	font-size: var(--fs-700);
+	color: rgb( var(--c-pink) );
+}
+
+/* ---------------------- */
+/* Layout                 */
+/* ---------------------- */
+
+section {
+	padding: 3em;
+}
+
+section.tight{
+	padding: 0;
+}
+
+main {
+	min-height: 100vh;
+}
+
+.fullWidth {
+	width: 100vw;
+}
+
+
 /* ---------------------- */
 /* Navigation             */
 /* ---------------------- */
@@ -267,10 +294,6 @@ footer .links a:focus{
 /* Home Page              */
 /* ---------------------- */
 
-main {
-	min-height: 100vh;
-}
-
 .carousel-inner img{
 	height: 75vh;
 	max-width: 65vw;
@@ -280,4 +303,6 @@ main {
 
 .carousel-caption {
 	background-color: rgb( var(--c-dark) / .85 );
+	font-size: var(--fs-500);
 }
+
