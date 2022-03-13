@@ -338,3 +338,7 @@ footer section {
 #contactForm .btn-accent{
 	border: 2px solid rgb( var(--c-light) / .3 );
 }
+
+#contactForm.btn-accent:hover{
+	border-color: rgb( var(--c-light) / .9 );
+}
