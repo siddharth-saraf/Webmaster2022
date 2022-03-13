@@ -199,7 +199,7 @@ section.tight{
 }
 
 main {
-	min-height: 100vh;
+	min-height: 80vh;
 }
 
 .fullWidth {
@@ -341,4 +341,16 @@ footer section {
 
 #contactForm.btn-accent:hover{
 	border-color: rgb( var(--c-light) / .9 );
+}
+
+/* ---------------------- */
+/* About Page             */
+/* ---------------------- */
+
+@media only screen and (max-width: 768px) {
+
+	#travis .desc {
+		font-size: var(--fs-400);
+	}	
+
 }
