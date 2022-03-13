@@ -269,6 +269,10 @@ footer .links a:focus{
 	color: rgb( var(--c-pink) );
 }
 
+footer section {
+	padding: 1.5em;
+}
+
 .linkSec{
 	margin-bottom: .5em;
 	padding-bottom: 5px;
