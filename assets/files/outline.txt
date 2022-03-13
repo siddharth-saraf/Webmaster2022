@@ -29,17 +29,15 @@ index.html
 		link to files
 		team number
 		link to 
-
-astro.html
-	Banner image, picture
-
-	Picture of skin given + emote and text
-
-	Video display
-	
 	
 sources.html
 	Sources Used Page
+
+past.html
+	page with pictures and reviews from previous Astronical concert
+
+about.html
+	Page with text content about Travis Scott, and little box with message for TSA saying no template was used to create this site, with the bootstrap docs used for reference
 
 	
 Student
