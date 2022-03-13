@@ -377,3 +377,11 @@ footer section {
 	margin-top: 1em;
 	overflow-wrap: break-word;
 }
+
+/* ---------------------- */
+/* Past Page              */
+/* ---------------------- */
+
+#video iframe {
+	max-width: 100%;
+}
