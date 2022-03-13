@@ -326,7 +326,6 @@ footer section {
 	background-color: rgb( var(--c-light) );
 }
 
-
 #contactForm .row {
 	margin-top: 3em;
 } 
@@ -348,6 +347,12 @@ footer section {
 	border-color: rgb( var(--c-light) / .9 );
 }
 
+/* Giftbox, used https://codepen.io/ElaineXu/pen/EWvGWX for reference */
+
+#items{
+	padding: 0;
+}
+
 /* ---------------------- */
 /* About Page             */
 /* ---------------------- */
@@ -363,6 +368,7 @@ footer section {
 /* ---------------------- */
 /* Sources Page           */
 /* ---------------------- */
+
 .citations *{
 	text-indent: -3em;
 	padding-left: 3em;

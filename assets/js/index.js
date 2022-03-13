@@ -9,3 +9,6 @@ $("#contactForm").on("submit", function(e){
     $('#contactModal').modal('show');
     e.preventDefault();
 });
+
+// Giftbox
+// Used https://codepen.io/ElaineXu/pen/EWvGWX for reference
