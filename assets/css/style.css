@@ -306,3 +306,16 @@ footer .links a:focus{
 	font-size: var(--fs-500);
 }
 
+#contactForm .row {
+	margin-top: 3em;
+} 
+
+#contactForm textarea {
+	min-height: 10em;
+}
+
+#contactForm input,
+#contactForm textarea{
+	padding: 1rem;
+}
+
