@@ -128,11 +128,12 @@ select {
 .bg-pink { background-color: rgba( var(--c-pink) ); }
 .bg-purple { background-color: rgb( var(--c-purple) );}
 .bg-lightBlue { background-color: rgb( var(--c-lightBlue) );}
-.bg-light { background-color: rgb( var(--c-light) );}
+.bg-light { background-color: rgb( var(--c-light) )!important;}
 
 .text-dark { color: rgb( var(--c-dark) );}
 .text-accent { color: rgb( var(--c-pink) );}
 .text-light { color: rgb( var(--c-light) );}
+.text-purp {color: rgb( var(--c-purple) );}
 
 a.text-accent:hover,
 a.text-accent:focus{
@@ -277,6 +278,7 @@ footer .links a:focus{
 
 	footer .links > .row > * + * {
 		border-left: 2px solid rgb( var(--c-pink) / .8);
+		height: 100%;
 	}
 
 }
@@ -319,3 +321,11 @@ footer .links a:focus{
 	padding: 1rem;
 }
 
+#calendar .title {
+	border-bottom: 3px solid rgb( var(--c-pink) );
+}
+
+#calendar .dates .list-group-item {
+	margin-top: 1em;
+	background-color: rgb( var(--c-light) );
+}
