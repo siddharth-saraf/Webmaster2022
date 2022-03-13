@@ -361,7 +361,7 @@ footer section {
 
 @media only screen and (max-width: 768px) {
 
-	#travis .desc {
+	.about .desc {
 		font-size: var(--fs-400);
 	}	
 
