@@ -308,6 +308,16 @@ footer .links a:focus{
 	font-size: var(--fs-500);
 }
 
+#calendar .title {
+	border-bottom: 3px solid rgb( var(--c-pink) );
+}
+
+#calendar .dates .list-group-item {
+	margin-top: 1em;
+	background-color: rgb( var(--c-light) );
+}
+
+
 #contactForm .row {
 	margin-top: 3em;
 } 
@@ -321,11 +331,6 @@ footer .links a:focus{
 	padding: 1rem;
 }
 
-#calendar .title {
-	border-bottom: 3px solid rgb( var(--c-pink) );
-}
-
-#calendar .dates .list-group-item {
-	margin-top: 1em;
-	background-color: rgb( var(--c-light) );
+#contactForm .btn-accent{
+	border: 2px solid rgb( var(--c-light) / .3 );
 }
