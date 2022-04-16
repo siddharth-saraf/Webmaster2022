@@ -14,6 +14,7 @@
 	--fs-900: 9.375rem;
 	--fs-800: 6.25rem;
 	--fs-700: 3.5rem;
+	--fs-650: 2.25rem;
 	--fs-600: 2rem;
 	--fs-500: 1.75rem;
 	--fs-450: 1.5rem;
@@ -356,6 +357,28 @@ footer section {
 
 #contactForm.btn-accent:hover{
 	border-color: rgb( var(--c-light) / .9 );
+}
+
+.dates li a{
+	opacity: .9;
+	color: rgb( var(--c-purple) );
+	text-decoration: none;
+	transition: opacity .5s ease-in-out, font-size .5s ease-in-out;
+}
+
+.dates li a:hover,
+.dates li a:active{
+	opacity: 1;
+	font-size: var(--fs-650);
+}
+
+.dates li:nth-child(odd) a:hover,
+.dates li:nth-child(odd) a:active{
+	/*color: rgb( var(--c-purple) );*/
+}
+
+.dates li:nth-child(odd) a{
+	color: rgb( var(--c-pink) );
 }
 
 /* Giftbox, used https://codepen.io/ElaineXu/pen/EWvGWX for reference */
