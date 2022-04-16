@@ -410,6 +410,20 @@ footer section {
 	#testisCarousel .carousel-item blockquote{
 		width: 30%;
 		padding: 1em;
+		transition: opacity .5s ease-in-out;
+		opacity: .5;
+	}
+
+	#testisCarousel .carousel-item:not(.active):not(.carousel-item-start):not(.carousel-item-next):not(.carousel-item-prev) blockquote{
+		opacity: .25;
+	}
+
+	#testisCarousel .carousel-item.active blockquote:nth-child(2){
+		opacity: 1;
+	}
+
+	#testisCarousel .carousel-item-start.active{
+		opacity: .25;
 	}
 
 	#testisCarousel .carousel-item blockquote{
