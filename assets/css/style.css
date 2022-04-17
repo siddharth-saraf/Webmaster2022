@@ -254,6 +254,11 @@ main {
   	width: 100%;
 }
 
+.navbar-brand img {
+	width: 110px;
+	height: 40px;
+}
+
 @media only screen and (max-width: 992px) {
 
 	.underline .nav-item::after {
