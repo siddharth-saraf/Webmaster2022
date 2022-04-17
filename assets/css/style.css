@@ -49,7 +49,8 @@ h3,
 h4,
 h5,
 p,
-picture {
+picture,
+figure {
 	margin: 0;
 }
 
@@ -92,7 +93,8 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture {
+picture,
+figure {
   max-width: 100%;
   display: block;
 }
@@ -192,6 +194,37 @@ a.text-accent:focus{
 .title {
 	border-bottom: 1px solid rgb(var( --c-light ));
 	padding-bottom: .5rem;
+}
+
+figure {
+	position: relative;
+}
+
+.licensing {
+	display: none;
+	float: right;
+	background-color: rgb( var( --c-light ) / .5 );
+	padding: .5em;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: black;
+	font-size: var(--fs-200);
+	overflow-wrap: break-word;
+}
+
+.licensing a {
+	color: black;
+	text-decoration: none;
+}
+
+.licensing a:hover,
+.licensing a:active {
+	color: rgb( var(--c-purple) );
+}
+
+figure:hover .licensing {
+	display: block;
 }
 
 /* ---------------------- */
@@ -322,14 +355,24 @@ footer section {
 /* Home Page              */
 /* ---------------------- */
 
-.carousel-inner img{
+#mainCarousel .carousel-inner img{
 	height: 75vh;
 	max-width: 65vw;
 	object-fit: scale-down;
 	margin: auto;
 }
 
-.carousel-caption {
+#mainCarousel .licensing{
+	top: 0;
+	bottom: initial;
+	margin: auto;
+}
+
+#mainCarousel .carousel-item:hover .licensing{
+	display: block;
+}
+
+#mainCarousel .carousel-caption {
 	background-color: rgb( var(--c-dark) / .85 );
 	font-size: var(--fs-500);
 }
