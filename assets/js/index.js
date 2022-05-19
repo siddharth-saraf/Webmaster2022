@@ -28,8 +28,3 @@ $("#testisCarousel .carousel-item").each(function() {
 	secondNext = secondNext.clone().addClass('added')
 	item.append(next, secondNext);
 });
-
-// Giftbox
-$(".llama").on('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(){	
-	$("#itemsModal").modal('show');
-})
