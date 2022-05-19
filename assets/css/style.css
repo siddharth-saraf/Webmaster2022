@@ -365,6 +365,7 @@ footer section {
 	float:  left;
 	bottom:  initial;
 	margin-top: -75vh;
+	display: none!important; /* REMOVE  */
 }
 
 #mainCarousel .carousel-item:hover .licensing{
