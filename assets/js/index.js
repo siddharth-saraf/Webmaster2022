@@ -30,4 +30,6 @@ $("#testisCarousel .carousel-item").each(function() {
 });
 
 // Giftbox
-// Used https://codepen.io/ElaineXu/pen/EWvGWX for reference
+$(".llama").on('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(){	
+	$("#itemsModal").modal('show');
+})

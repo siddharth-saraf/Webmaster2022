@@ -96,6 +96,7 @@ img,
 picture,
 figure {
   max-width: 100%;
+  max-height: 100%;
   display: block;
 }
 
@@ -356,16 +357,14 @@ footer section {
 /* ---------------------- */
 
 #mainCarousel .carousel-inner img{
-	height: 75vh;
-	max-width: 65vw;
 	object-fit: scale-down;
 	margin: auto;
 }
 
 #mainCarousel .licensing{
-	top: 0;
-	bottom: initial;
-	margin: auto;
+	float:  left;
+	bottom:  initial;
+	margin-top: -75vh;
 }
 
 #mainCarousel .carousel-item:hover .licensing{
@@ -375,7 +374,39 @@ footer section {
 #mainCarousel .carousel-caption {
 	background-color: rgb( var(--c-dark) / .85 );
 	font-size: var(--fs-500);
+	padding:  2rem;
 }
+
+#mainCarousel img{
+	max-width: 80%!important;
+	height:  60vh;
+}	
+
+@media only screen and (max-width: 992px) {
+
+	#mainCarousel img{
+		max-width: 90%!important;
+	}	
+
+	#mainCarousel .carousel-caption .accDisplay {
+		font-size:  var( --fs-650 );
+	}
+
+	#mainCarousel .carousel-caption {
+		font-size:  var( --fs-450 );
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+	#mainCarousel img{
+		max-width: 70%!important;
+		height:  75vh;
+	}
+
+}
+
 
 #calendar .title {
 	border-bottom: 3px solid rgb( var(--c-pink) );
@@ -428,11 +459,69 @@ footer section {
 .dates li:nth-child(odd) a{
 	color: rgb( var(--c-pink) );
 }
+  
+.llamaWrap {
+	height: 40em;
+	width:  40em;
+	padding:  5em;
+  	display:inline-block;
+  	-webkit-mask:
+     	radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left,
+     	radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right,
+     	linear-gradient(to bottom left, red 43%,transparent 43%) bottom left ,
+     	linear-gradient(to bottom right,red 43%,transparent 43%) bottom right;
+  	-webkit-mask-size:50% 50%;
+  	-webkit-mask-repeat:no-repeat;
+  	mask:
+     	radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left,
+     	radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right,
+     	linear-gradient(to bottom left, red 43%,transparent 43%) bottom left ,
+     	linear-gradient(to bottom right,red 43%,transparent 43%) bottom right;
+  	mask-size:50% 50%;
+  	mask-repeat:no-repeat;
+  	background:linear-gradient( rgb( var(--c-pink) / .5 ) , rgb( var(--c-pink) ) );
+}
 
-/* Giftbox, used https://codepen.io/ElaineXu/pen/EWvGWX for reference */
+.llamaWrap::before {
+	content:"";
+	display:block;
+  	padding-top:100%;
+}
 
-#items{
-	padding: 0;
+.llamaWrap *{
+	margin-top: -100%;
+}
+
+/* Llama opening */
+
+.llama:hover{
+	animation-name: shake;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
+}
+
+@media only screen and (hover: none) {
+
+	/* For mobile devices and Ipads with no mousepointer/hover where touch is the method of interaction to access animation */
+
+	.llama:active{
+		animation-name: shake;
+		animation-duration: 3s;
+		animation-timing-function: ease-out;
+	}
+
+}
+
+@keyframes shake {
+	5%   {transform: rotate(5deg);}
+	12%  {transform: rotate(-5deg);}
+	26%  {transform: rotate(10deg);}
+	40%  {transform: rotate(-10deg);}
+	54%  {transform: rotate(15deg);}
+	68%  {transform: rotate(-15deg);}
+	82%  {transform: rotate(20deg);}
+	96%  {transform: rotate(-20deg);}
+	100% {transform: rotate(0deg);}
 }
 
 /* ---------------------- */
