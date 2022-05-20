@@ -18,12 +18,12 @@ function hideLicensing() {
 };
 
 // Function to position licensing accurately on the home page Carousel called for each image on scroll
-function positionLicensing() { 
+function positionLicensing() {
 	item = $('#mainCarousel .active');
-	leftPosition = item.find('img').offset().left - item.find('figure').offset().left;
-	topPosition = item.find('img').height - item.find('img').clientHeight;
 	imageReference = item.find('img');
-	image = imageReference[0];
+	image = imageReference[0]; 
+	leftPosition = imageReference.offset().left - item.find('figure').offset().left;
+	topPosition = imageReference.height - imageReference.clientHeight;	
 	sizeRatio = image.width / image.naturalWidth;
 	changeInHeight = ( image.height - sizeRatio * image.naturalHeight ) / 2;
 	item.find('figcaption.licensing').css('left', leftPosition);
@@ -33,7 +33,11 @@ function positionLicensing() {
 
 function handleLicensing() {
 	hideLicensing();
-	positionLicensing();
+	if ( document.readyState == "complete" ){
+		positionLicensing();
+	} else {
+		$( window ).on("load", positionLicensing);
+	};
 };
 
 handleLicensing();

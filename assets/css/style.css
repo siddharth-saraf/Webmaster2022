@@ -364,6 +364,7 @@ footer section {
 #mainCarousel .licensing{
 	bottom:  initial;
 	top:  0;
+	opacity:  0;
 }
 
 #mainCarousel .carousel-item:hover .licensing{
