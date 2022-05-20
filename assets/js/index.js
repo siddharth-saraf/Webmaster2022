@@ -33,8 +33,13 @@ function positionLicensing() {
 
 function handleLicensing() {
 	hideLicensing();
-	positionLicensing();
+	if ( document.readyState == "complete" ){
+		positionLicensing();
+	} else {
+		$( window ).on("load", positionLicensing);
+	};
 };
+
 
 if ( $('.home').length != 0 ) {
 
