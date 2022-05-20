@@ -362,10 +362,8 @@ footer section {
 }
 
 #mainCarousel .licensing{
-	float:  left;
 	bottom:  initial;
-	margin-top: -75vh;
-	display: none!important; /* REMOVE  */
+	top:  0;
 }
 
 #mainCarousel .carousel-item:hover .licensing{
@@ -380,7 +378,8 @@ footer section {
 
 #mainCarousel img{
 	max-width: 80%!important;
-	height:  60vh;
+	height:  75vh;
+	min-height:  25em;
 }	
 
 @media only screen and (max-width: 992px) {
@@ -403,7 +402,6 @@ footer section {
 
 	#mainCarousel img{
 		max-width: 70%!important;
-		height:  75vh;
 	}
 
 }
