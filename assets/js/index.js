@@ -36,9 +36,13 @@ function handleLicensing() {
 	positionLicensing();
 };
 
-handleLicensing();
-$( window ).resize( handleLicensing );
-$( '#mainCarousel' ).on('slid.bs.carousel', handleLicensing);
+if ( $('.home').length != 0 ) {
+
+	handleLicensing();
+	$( window ).resize( handleLicensing );
+	$( '#mainCarousel' ).on('slid.bs.carousel', handleLicensing);
+
+};
 
 
 // Code to make testimonial slideshow on past.html show more than one element per slide
