@@ -472,6 +472,12 @@ footer section {
 
 }
 
+#epicDisclaimer {
+	width:  100vw;
+	margin-left:  -3em;
+	background-color:  rgb( var(--c-light) / .6 );
+}
+
 /* ---------------------- */
 /* Sources Page           */
 /* ---------------------- */
